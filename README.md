@@ -4,7 +4,7 @@
 
 **Learning visual steering from a PID expert, then improving the policy with on-policy data collection.**
 
-An imitation learning project built with Python, PyTorch, and a Gym/Box2D racing simulator for CSC2626 Assignment 1. A convolutional network predicts steering from a 128 × 128 RGB observation. DAgger collects expert labels on states visited by the learner and retrains on the aggregated dataset.
+This project modifies and extends materials provided in the **Imitation Learning for Robotics (CSC2626H)** course. Built with Python, PyTorch, and a Gym/Box2D racing simulator, it uses a convolutional network to predict steering from a 128 × 128 RGB observation. DAgger collects expert labels on states visited by the learner and retrains on the aggregated dataset.
 
 The GIF is an actual rollout of the included iteration-10 checkpoint on track seed 0, recorded at the simulator's playback speed. **The CNN controls steering; the PID expert supplies throttle and braking.** This is a steering-learning demonstration in simulation.
 
@@ -99,6 +99,6 @@ DAgger adds images to `dataset/train/` and writes checkpoints to `weights/`. Sta
 
 ## Project scope and attribution
 
-This repository presents work completed within the CSC2626 assignment framework. The learning-related implementations include the CNN, training loop, imbalance handling, DAgger loop, device selection, and rollout metrics. The racing simulator and PID expert are based on the supplied course framework; `car_racing.py` retains its original credit to Andrea PIERRÉ. The environment is adapted from Gym's CarRacing implementation.
+This project is modified and extended from materials provided in the **Imitation Learning for Robotics (CSC2626H)** course. The learning-related implementations include the CNN, training loop, imbalance handling, DAgger loop, device selection, and rollout metrics. The racing simulator and PID expert are based on the supplied course framework; `car_racing.py` retains its original credit to Andrea PIERRÉ. The environment is adapted from Gym's CarRacing implementation.
 
 The repository keeps source code, curated figures, the demo GIF, and one small final checkpoint. Local virtual environments, datasets, intermediate models, editor settings, the assignment handout, and submission archives are excluded through `.gitignore`.
