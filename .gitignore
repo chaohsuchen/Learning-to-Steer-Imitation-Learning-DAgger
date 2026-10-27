@@ -1,0 +1,53 @@
+# Local Python environments and caches
+myenv/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Editor, OS, and local assistant settings
+.DS_Store
+._*
+.idea/
+.vscode/
+.claude/
+.codex/
+.agents/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Training data, assignment handout, and submission archives
+/dataset/
+*.zip
+/CSC2626_Assignment_1.pdf
+
+# Generated checkpoints; retain only the final demo model
+*.weights
+*.pt
+*.pth
+/old_weights/
+/final_weights/*
+!/final_weights/learner_10.weights
+/weights/*
+!/weights/README.md
+
+# Experiment outputs; curated figures and demo GIFs live in images/
+/dagger_iterations.png
+/images/dagger_iterations_old.png
+*.log
+/runs/
+/wandb/
+*.mp4
+*.mov
