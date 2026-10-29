@@ -10,6 +10,12 @@ The GIF is an actual rollout of the included iteration-10 checkpoint on track se
 
 The recorded clip contains 1,500 simulation steps (30 seconds), with a mean absolute cross-track error of 1.6198 in simulator units. This measurement covers this clip only.
 
+Interested in producing CARLA scenes like the one below? Check out [Learning to Recover: DAgger for Lane Keeping in CARLA](https://github.com/chaohsuchen/Learning-to-Recover-DAgger-for-Lane-Keeping-in-CARLA).
+
+<a href="https://github.com/chaohsuchen/Learning-to-Recover-DAgger-for-Lane-Keeping-in-CARLA">
+  <img src="images/carla.gif" alt="Behavior cloning and DAgger lane-keeping comparison in CARLA" width="640">
+</a>
+
 ## Implementation highlights
 
 - **Visual policy:** four convolutional layers and a fully connected classifier map RGB observations to 20 discrete steering commands.
